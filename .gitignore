@@ -1,0 +1,25 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node / build helpers (if used later)
+node_modules/
+dist/
+build/
+
+# Composer (if used later)
+vendor/
+
+# WordPress runtime artifacts (local installs)
+wp-content/cache/
+wp-content/uploads/cache/
+wp-content/upgrade/
+
+# Env files
+.env
+.env.*
