@@ -61,9 +61,24 @@ function lmr_enqueue_assets() {
         '2.3.0'
     );
 
+    wp_enqueue_script(
+        'lmr-main',
+        get_template_directory_uri() . '/assets/js/main.js',
+        [],
+        '2.3.0',
+        true
+    );
+
 }
 
 add_action('wp_enqueue_scripts', 'lmr_enqueue_assets');
+    wp_enqueue_script(
+        'lmr-main',
+        get_template_directory_uri() . '/assets/js/main.js',
+        [],
+        '2.3.0',
+        true
+    );
 
 
 /*
