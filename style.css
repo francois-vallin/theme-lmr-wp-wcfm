@@ -1,0 +1,38 @@
+/*
+Theme Name: Le Marché Rural
+Theme URI: https://github.com/francois-vallin/theme-lmr-wp-wcfm
+Author: François Vallin
+Author URI: https://www.lemarcherural.com
+Description: Thème WordPress pour la marketplace agricole Le Marché Rural (WooCommerce + WCFM).
+Version: 2.3.0
+License: GPL v2 or later
+Text Domain: le-marche-rural
+*/
+
+/* Couleurs principales */
+
+:root{
+--lmr-green:#2f5b36;
+--lmr-cream:#f7f2e7;
+--lmr-orange:#e4773c;
+--lmr-honey:#f7b731;
+--lmr-dark:#233526;
+}
+
+body{
+margin:0;
+padding:0;
+background:var(--lmr-cream);
+color:var(--lmr-dark);
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+line-height:1.6;
+}
+
+a{
+color:var(--lmr-green);
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+}
