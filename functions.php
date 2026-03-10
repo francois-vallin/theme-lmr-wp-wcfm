@@ -54,6 +54,13 @@ function lmr_enqueue_assets() {
         '2.3.0'
     );
 
+    wp_enqueue_style(
+        'lmr-main',
+        get_template_directory_uri() . '/assets/css/main.css',
+        ['lmr-style'],
+        '2.3.0'
+    );
+
 }
 
 add_action('wp_enqueue_scripts', 'lmr_enqueue_assets');
