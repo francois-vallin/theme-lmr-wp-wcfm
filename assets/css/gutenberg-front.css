@@ -1,20 +1,89 @@
+/*
+Thème : Le Marché Rural
+Version actuelle : 2.4.0
+Version de création du fichier : 0.1.0
+Auteur : François Vallin
+
+Création : 2025-04-08 00:00
+Dernière modification : 2026-03-11 17:45
+*/
 
 /* Gutenberg-specific front styles for block pages */
-.wp-block{max-width:100%;}
-.home-hero-block{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
-.home-hero-block h1{margin:.2rem 0 .4rem;font-size:2rem;color:var(--lmr-green);font-weight:900}
-.home-hero-block p.lead{margin:0 0 1rem;font-size:1.05rem}
-.home-hero-block .wp-block-buttons{margin:.5rem 0 0}
-.home-hero-illustration img{max-width:360px;width:100%;display:block;margin:0 auto}
-@media (max-width:900px){
-  .home-hero-block{grid-template-columns:1fr}
-  .home-hero-illustration img{max-width:220px}
+.wp-block {
+  max-width: 100%;
 }
-/* Categories carousel using scroll-snap */
-.lmr-cats-carousel{position:relative}
-.lmr-cats-carousel ul.products{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:8px}
-.lmr-cats-carousel ul.products li.product{flex:0 0 160px;scroll-snap-align:start;margin-bottom:8px !important}
-.lmr-cats-carousel::-webkit-scrollbar{height:8px}
-.lmr-cats-carousel::-webkit-scrollbar-thumb{background:#d3c8b3;border-radius:10px}
-/* Trust band nice layout */
-.trust-band-block .wp-block-column{background:#fff;border:1px solid #eadfcd;border-radius:14px;padding:12px;font-weight:700}
+
+.home-hero-block {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.home-hero-block h1 {
+  margin: 0.2rem 0 0.4rem;
+  font-size: 2rem;
+  color: var(--lmr-green);
+  font-weight: 900;
+}
+
+.home-hero-block p.lead {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+}
+
+.home-hero-block .wp-block-buttons {
+  margin: 0.5rem 0 0;
+}
+
+.home-hero-illustration img {
+  max-width: 360px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.lmr-cats-carousel {
+  position: relative;
+}
+
+.lmr-cats-carousel ul.products {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  padding-bottom: 8px;
+}
+
+.lmr-cats-carousel ul.products li.product {
+  flex: 0 0 160px;
+  scroll-snap-align: start;
+  margin-bottom: 8px !important;
+}
+
+.lmr-cats-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.lmr-cats-carousel::-webkit-scrollbar-thumb {
+  background: #d3c8b3;
+  border-radius: 10px;
+}
+
+.trust-band-block .wp-block-column {
+  background: #fff;
+  border: 1px solid #eadfcd;
+  border-radius: 14px;
+  padding: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .home-hero-block {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero-illustration img {
+    max-width: 220px;
+  }
+}

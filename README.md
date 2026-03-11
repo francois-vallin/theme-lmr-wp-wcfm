@@ -1,84 +1,87 @@
-# Le Marché Rural — Thème WordPress
+<!--
+Thème : Le Marché Rural
+Version actuelle : 2.4.0
+Version de création du fichier : 0.1.0
+Auteur : François Vallin
 
-Dernière mise à jour : 2026-03-10  
-Version du thème : 2.4.0
+Création : 2025-04-08 00:00
+Dernière modification : 2026-03-11 17:45
+-->
 
-## Présentation du projet
+# Le Marché Rural
 
-**Le Marché Rural** est une marketplace agricole locale construite avec **WordPress**, **WooCommerce** et **WCFM**.  
-L'objectif est de proposer une expérience de marché en ligne qui reste **humaine, chaleureuse, locale et lisible**, en mettant en avant de vrais producteurs identifiés.
+Thème WordPress du projet **Le Marché Rural**, pensé pour une marketplace agricole locale basée sur **WordPress**, **WooCommerce** et **WCFM**.
 
-Le thème sert de base visuelle et fonctionnelle pour :
-- valoriser les produits fermiers et le circuit court ;
-- rassurer les visiteurs (clarté, lisibilité, confiance) ;
-- faciliter le parcours client : Accueil → Catégories → Produits → Fiche produit → Panier → Commande ;
-- garder une identité rurale authentique (sans effet startup froide ou marketplace industrielle).
+## Positionnement
 
-## Stack technique cible
+Le thème doit évoquer :
 
-- **CMS** : WordPress
-- **E-commerce** : WooCommerce
-- **Marketplace vendeurs** : WCFM (WooCommerce Frontend Manager)
-- **Thème** : thème personnalisé `Le Marché Rural`
+- un vrai marché rural
+- des producteurs identifiés
+- un univers simple, chaleureux et lisible
+- une vente locale et humaine
 
-## Philosophie visuelle et fonctionnelle
+Le site ne doit pas ressembler à une marketplace industrielle.
 
-Le thème suit les principes suivants :
-- ambiance **rurale, simple, fiable et authentique** ;
-- priorité à la lecture des contenus et au réconfort visuel ;
-- parcours d'achat clair, sans surcharge ;
-- mise en avant des vendeurs/producteurs ;
-- cohérence multi-pages (accueil, boutique, fiches produit, pages vendeurs, blog, pages statiques).
+## Choix techniques validés
 
-Palette de référence :
-- vert fermier ;
-- crème/papier ;
-- orange terre ;
-- jaune miel.
+- **d’abord CSS + structure**
+- **habillage marketplace** progressif
+- **accueil en blocs Gutenberg + pattern**
+- compatibilité WooCommerce
+- compatibilité WCFM
 
-## État actuel du projet
+## Structure
 
-La base du thème est en place avec :
-- des templates principaux WordPress/WooCommerce ;
-- un socle de styles ;
-- un chargement des assets centralisé ;
-- une documentation de maintenance (README, CHANGELOG, ROADMAP).
+```text
+assets/
+  css/
+  js/
+  icons/
+  placeholders/
 
-Le projet est désormais prêt à avancer par lots logiques, avec versioning aligné et feuille de route priorisée.
+patterns/
 
-## Installation du thème
+functions.php
+header.php
+footer.php
+index.php
+page.php
+single.php
+archive.php
+style.css
+```
 
-1. Copier le dossier du thème dans `wp-content/themes/`.
-2. Vérifier que les extensions **WooCommerce** et **WCFM** sont installées/activées.
-3. Activer le thème **Le Marché Rural** dans l'administration WordPress.
-4. Vérifier les permaliens et les pages clés (boutique, panier, commande, compte).
-5. Vérifier le rendu front (desktop + mobile) avant mise en production.
+## État actuel
 
-## Structure actuelle (vue simplifiée)
+Version stable de travail : **2.4.0**
 
-- `style.css` : métadonnées du thème + base CSS.
-- `functions.php` : setup thème + enqueues + hooks globaux.
-- `header.php` / `footer.php` : structure globale.
-- `templates/` : templates personnalisés (ex. page d'accueil).
-- `woocommerce/` : surcharge templates WooCommerce.
-- `index.php` : fallback principal WordPress.
-- `CHANGELOG.md` : historique des versions.
-- `ROADMAP.md` : plan d'évolution détaillé et priorisé.
+Base actuelle :
+- structure générale du thème stabilisée
+- menu principal habillé
+- sidebar front neutralisée
+- largeur boutique corrigée
+- footer de base remis au propre
+- assets structurés
+- pattern Gutenberg disponible pour l’accueil
 
-## Rôle du thème dans la maintenance long terme
+## Convention de maintenance
 
-Le thème doit rester :
-- compatible WordPress/WooCommerce/WCFM ;
-- maintenable (versions harmonisées, documentation à jour) ;
-- cohérent avec l'identité locale du Marché Rural ;
-- extensible sans réarchitecture lourde.
+Tout fichier créé ou modifié doit contenir un en-tête avec :
+- thème
+- version actuelle
+- version de création du fichier
+- auteur
+- création
+- dernière modification
 
-## Prochaines grandes étapes
+Format date/heure :
+`AAAA-MM-JJ HH:MM`
 
-1. Stabiliser la structure Git/thème et le socle CSS global.
-2. Stabiliser l'accueil (blocs/patterns + catégories phares).
-3. Stabiliser archive boutique puis fiche produit.
-4. Intégrer et harmoniser WCFM sur les pages vendeurs/dashboard.
-5. Finir les corrections responsive/mobile et les raffinements.
+## Priorités suivantes
 
-Le détail complet est dans `ROADMAP.md`.
+1. stabiliser définitivement le layout global
+2. affiner header et footer
+3. habiller l’archive boutique
+4. intégrer progressivement WCFM côté front
+5. finaliser l’accueil Gutenberg + pattern
