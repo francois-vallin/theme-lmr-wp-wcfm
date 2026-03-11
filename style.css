@@ -3,19 +3,22 @@ Theme Name: Le Marché Rural
 Theme URI: https://github.com/francois-vallin/theme-lmr-wp-wcfm
 Author: François Vallin
 Author URI: https://github.com/francois-vallin
-Description: Thème WordPress pour la plateforme Le Marché Rural – marketplace de producteurs locaux.
-Version: 2.4.0
+Description: Thème WordPress marketplace agricole compatible WooCommerce et WCFM
+Version: 2.4.1
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 8.0
 Text Domain: le-marche-rural
 */
 
 /*
 Thème : Le Marché Rural
-Version actuelle : 2.4.0
+Version actuelle : 2.4.1
 Version de création du fichier : 0.1.0
 Auteur : François Vallin
 
 Création : 2025-04-08 00:00
-Dernière modification : 2026-03-11 17:45
+Dernière modification : 2026-03-12 23:30
 */
 
 @charset "UTF-8";
@@ -367,4 +370,48 @@ h6 {
   .primary-nav ul.menu {
     gap: 8px;
   }
+}
+/* =========================================
+   WooCommerce Product Cards Improvements
+   Version 2.4.1
+========================================= */
+
+.woocommerce ul.products li.product {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 16px;
+    border-radius: 8px;
+    transition: box-shadow .2s ease;
+}
+
+.woocommerce ul.products li.product:hover {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 1.05rem;
+    margin: 10px 0;
+    min-height: 48px;
+}
+
+.woocommerce ul.products li.product .price {
+    font-weight: bold;
+    color: #2f5b36;
+}
+
+.woocommerce ul.products li.product .button {
+    background: #2f5b36;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.woocommerce ul.products li.product .button:hover {
+    background: #24482b;
+}
+
+.woocommerce span.onsale {
+    background: #e4773c;
+    color: #fff;
+    border-radius: 4px;
 }

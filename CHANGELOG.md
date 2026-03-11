@@ -5,8 +5,20 @@ Version de création du fichier : 0.1.0
 Auteur : François Vallin
 
 Création : 2025-04-08 00:00
-Dernière modification : 2026-03-11 17:45
+Dernière modification : 2026-03-12 23:45
 -->
+## 2.4.1 — 2026-03-12
+
+### Added
+- WooCommerce gallery support (zoom, lightbox, slider)
+
+### Improved
+- Product card styling
+- WooCommerce compatibility
+
+### Technical
+- Theme version bump
+- Functions.php metadata updated
 
 # Changelog
 
