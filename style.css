@@ -1,38 +1,42 @@
 /*
 Theme Name: Le Marché Rural
-Theme URI: https://github.com/francois-vallin/theme-lmr-wp-wcfm
+Version: 2.3.1
 Author: François Vallin
-Author URI: https://www.lemarcherural.com
-Description: Thème WordPress pour la marketplace agricole Le Marché Rural (WooCommerce + WCFM).
-Version: 2.4.0
-License: GPL v2 or later
-Text Domain: le-marche-rural
 */
+@charset "UTF-8";
+:root{--lmr-green:#2f5b36;--lmr-cream:#f7f2e7;--lmr-orange:#e4773c;--lmr-honey:#f7b731;--lmr-dark:#233526}
+html,body{margin:0;padding:0;background:var(--lmr-cream);color:var(--lmr-dark);font-family:'Nunito',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:var(--lmr-green);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+.site-header{position:sticky;top:0;background:var(--lmr-cream);border-bottom:2px solid #e9e1d3;z-index:10}
+.site-header .row{display:flex;align-items:center;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--lmr-green)}
+.brand img{height:40px;width:auto}
+.primary-nav{margin-left:auto;display:flex;gap:18px;align-items:center}
+.icon-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:10px}
+.btn{background:var(--lmr-honey);color:#1c1c1c;border:0;border-radius:999px;padding:12px 18px;font-weight:800;display:inline-block}
+.site-footer{margin-top:48px;border-top:2px solid #e9e1d3;padding:28px 0;color:#334}
+h1,h2,h3{color:var(--lmr-green);font-weight:900}
 
-/* Couleurs principales */
-
-:root{
---lmr-green:#2f5b36;
---lmr-cream:#f7f2e7;
---lmr-orange:#e4773c;
---lmr-honey:#f7b731;
---lmr-dark:#233526;
+/* Product grids (classic + blocks) */
+.woocommerce ul.products{display:flex;flex-wrap:wrap;margin-left:-8px;margin-right:-8px}
+.woocommerce ul.products li.product{display:block;flex:0 0 calc(25% - 16px);margin:0 8px 16px !important;float:none !important}
+.wc-block-grid .wc-block-grid__products{display:flex;flex-wrap:wrap;margin-left:-8px;margin-right:-8px}
+.wc-block-grid__product{flex:0 0 calc(25% - 16px);margin:0 8px 16px}
+@media (max-width:599px){
+  .woocommerce ul.products li.product{flex-basis:calc(50% - 16px)}
+  .wc-block-grid__product{flex-basis:calc(50% - 16px)}
+}
+@media (min-width:600px) and (max-width:1023px){
+  .woocommerce ul.products li.product{flex-basis:calc(33.333% - 16px)}
+  .wc-block-grid__product{flex-basis:calc(33.333% - 16px)}
 }
 
-body{
-margin:0;
-padding:0;
-background:var(--lmr-cream);
-color:var(--lmr-dark);
-font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-line-height:1.6;
-}
-
-a{
-color:var(--lmr-green);
-text-decoration:none;
-}
-
-a:hover{
-text-decoration:underline;
-}
+/* Single product image patch */
+.woocommerce-product-gallery,
+.woocommerce-product-gallery__wrapper,
+.woocommerce-product-gallery__image img{width:100%!important;height:auto!important;max-width:100%!important}
+.flex-control-thumbs{display:flex;flex-wrap:wrap;gap:8px}
+.flex-control-thumbs li{flex:0 0 calc(25% - 8px)}
+.flex-control-thumbs img{width:100%;height:auto;object-fit:cover}
+.wcfm_buttons{margin-bottom:10px;display:flex;gap:6px}

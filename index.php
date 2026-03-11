@@ -1,47 +1,12 @@
 <?php
-/**
- * Fichier de base du thème
- * Le Marché Rural
- */
-
-if ( ! defined( 'ABSPATH' ) ) {
-    exit; // Sécurité : empêche l'accès direct
-}
-
+if ( ! defined('ABSPATH') ) exit;
 get_header();
-?>
-
-<div class="site-main container">
-
-<?php
-if ( have_posts() ) :
-
-    while ( have_posts() ) :
-        the_post();
-        ?>
-
-        <article id="post-<?php the_ID(); ?>">
-
-            <h1><?php the_title(); ?></h1>
-
-            <div class="entry-content">
-                <?php the_content(); ?>
-            </div>
-
-        </article>
-
-        <?php
-
-    endwhile;
-
-else :
-    ?>
-
-    <p>Aucun contenu pour le moment.</p>
-
-<?php endif; ?>
-
-</div>
-
-<?php
+if(have_posts()): while(have_posts()): the_post();
+  echo '<article id="post-'.get_the_ID().'" '; post_class(); echo '>';
+  echo '<h1>'.get_the_title().'</h1>';
+  echo '<div class="entry-content">'; the_content(); echo '</div></article>';
+endwhile; else:
+  echo '<p>'.esc_html__('Aucun contenu pour le moment.','le-marche-rural').'</p>';
+endif;
 get_footer();
+?>
