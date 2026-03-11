@@ -1,31 +1,119 @@
-<!-- wp:group {"className":"home-hero-block","layout":{"type":"constrained"}} -->
-<div class="wp-block-group home-hero-block">
-  <!-- wp:group -->
-  <div class="wp-block-group">
-    <!-- wp:heading {"level":1} -->
-    <h1>Le Marché Rural</h1>
-    <!-- /wp:heading -->
+<!-- wp:group {"className":"home-hero-block lmr-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group home-hero-block lmr-section"><!-- wp:group -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"lmr-badge"} -->
+<p class="lmr-badge">Marketplace locale &amp; circuit court</p>
+<!-- /wp:paragraph -->
 
-    <!-- wp:paragraph {"className":"lead"} -->
-    <p class="lead">Produits fermiers près de chez vous : légumes, œufs, miel, fromages et plus encore.</p>
-    <!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1>Le Marché Rural</h1>
+<!-- /wp:heading -->
 
-    <!-- wp:buttons -->
-    <div class="wp-block-buttons">
-      <!-- wp:button -->
-      <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/boutique/">Voir la boutique</a></div>
-      <!-- /wp:button -->
-    </div>
-    <!-- /wp:buttons -->
-  </div>
-  <!-- /wp:group -->
+<!-- wp:paragraph {"className":"lead"} -->
+<p class="lead">Retrouvez les producteurs près de chez vous : légumes, œufs, miel, fromages et spécialités artisanales.</p>
+<!-- /wp:paragraph -->
 
-  <!-- wp:group {"className":"home-hero-illustration"} -->
-  <div class="wp-block-group home-hero-illustration">
-    <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-    <figure class="wp-block-image size-full"><img src="/wp-content/themes/theme-lmr-wp-wcfm-main/assets/icons/basket.svg" alt=""/></figure>
-    <!-- /wp:image -->
-  </div>
-  <!-- /wp:group -->
-</div>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/boutique/">Voir la boutique</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/vendeurs/">Découvrir les producteurs</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"home-hero-illustration"} -->
+<div class="wp-block-group home-hero-illustration"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="/wp-content/themes/theme-lmr-wp-wcfm-main/assets/icons/basket.svg" alt="Panier du marché rural"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"lmr-home-section lmr-section"} -->
+<div class="wp-block-group lmr-home-section lmr-section"><!-- wp:heading -->
+<h2>Catégories phares</h2>
+<!-- /wp:heading -->
+
+<!-- wp:woocommerce/product-categories {"number":6,"hasImage":true,"isHierarchical":false} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"lmr-home-section lmr-section"} -->
+<div class="wp-block-group lmr-home-section lmr-section"><!-- wp:heading -->
+<h2>Promotions du moment</h2>
+<!-- /wp:heading -->
+
+<!-- wp:woocommerce/product-collection {"queryId":1,"query":{"woocommerceAttributes":[],"woocommerceStockStatus":["instock"],"perPage":4,"pages":0,"offset":0,"postType":"product","order":"desc","orderBy":"date","search":"","exclude":[],"inherit":false,"taxQuery":{"product_visibility":["featured"]},"parents":[],"format":[]},"displayLayout":{"type":"flex","columns":4,"shrinkColumns":true}} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"lmr-home-section lmr-section"} -->
+<div class="wp-block-group lmr-home-section lmr-section"><!-- wp:heading -->
+<h2>Nouveautés</h2>
+<!-- /wp:heading -->
+
+<!-- wp:woocommerce/product-new {"rows":1,"columns":4} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"lmr-home-section lmr-section home-reassurance"} -->
+<div class="wp-block-group lmr-home-section lmr-section home-reassurance"><!-- wp:heading -->
+<h2>Pourquoi commander ici ?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Producteurs vérifiés</strong><br>Des vendeurs locaux avec identité claire.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Circuit court</strong><br>Moins d’intermédiaires, plus de transparence.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Confiance</strong><br>Paiement sécurisé et avis clients.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"lmr-home-section lmr-section home-blog-grid"} -->
+<div class="wp-block-group lmr-home-section lmr-section home-blog-grid"><!-- wp:heading -->
+<h2>Conseils &amp; actualités</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":12,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"}} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+<!-- wp:post-featured-image {"isLink":true} /-->
+
+<!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-excerpt {"moreText":"Lire l’article"} /-->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/blog/">Voir tous les articles</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"lmr-home-section lmr-section"} -->
+<div class="wp-block-group lmr-home-section lmr-section"><!-- wp:heading -->
+<h2>Prêt à soutenir les producteurs locaux ?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Rejoignez un marché de proximité qui valorise la qualité, la saisonnalité et la relation de confiance entre producteurs et clients.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/mon-compte/">Créer mon compte</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->

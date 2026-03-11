@@ -1,12 +1,27 @@
 <!--
-Thème : Le Marché Rural
-Version actuelle : 2.4.0
-Version de création du fichier : 0.1.0
-Auteur : François Vallin
-
-Création : 2025-04-08 00:00
-Dernière modification : 2026-03-12 23:45
+Theme: Le Marché Rural
+Version: 2.5.0
+Author: François Vallin
+Updated: 2026-03-13T10:30
 -->
+
+# Changelog
+
+## 2.5.0 — 2026-03-13
+
+### Marketplace Theme Overhaul
+
+- Renforcement du design system CSS avec classes utilitaires `.lmr-container`, `.lmr-section`, `.lmr-card`, `.lmr-badge`, `.lmr-button`.
+- Refonte du header avec hiérarchie claire : logo, navigation principale, action panier WooCommerce.
+- Refonte du footer avec menu secondaire, menu légal et copyright harmonisé.
+- Amélioration de l’archive boutique WooCommerce : cartes premium, badge promo lisible, boutons cohérents, prix mis en avant.
+- Amélioration des fiches produit : galerie, prix, description, bouton panier et vendeur plus visibles.
+- Intégration vendeurs : affichage explicite "Vendu par" sur cartes produit et fiches produit.
+- Finalisation du pattern d’accueil Gutenberg avec sections hero, catégories, promotions, nouveautés, réassurance, blog et CTA final.
+- Ajout de la section "Conseils & actualités" avec 3 derniers articles + bouton "Voir tous les articles".
+- Consolidation responsive pour header mobile, boutique, accueil et blog.
+- Mise à jour de la documentation (`README.md`, `CHANGELOG.md`, `ROADMAP.md`).
+
 ## 2.4.1 — 2026-03-12
 
 ### Added
@@ -19,8 +34,6 @@ Dernière modification : 2026-03-12 23:45
 ### Technical
 - Theme version bump
 - Functions.php metadata updated
-
-# Changelog
 
 ## 2.4.0 - 2026-03-11 17:45
 - Harmonisation de la version du thème.
