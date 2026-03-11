@@ -1,48 +1,29 @@
 <!--
-Thème : Le Marché Rural
-Version actuelle : 2.4.0
-Version de création du fichier : 0.1.0
-Auteur : François Vallin
-
-Création : 2025-04-08 00:00
-Dernière modification : 2026-03-11 17:45
+Theme: Le Marché Rural
+Version: 2.5.0
+Author: François Vallin
+Updated: 2026-03-13T10:30
 -->
 
 # Roadmap
 
-## Cap validé
-- stratégie : **CSS + structure d’abord**
-- objectif : **habillé marketplace**
-- accueil : **blocs Gutenberg + pattern**
+## 2.5.0 — Marketplace Theme Overhaul (livré)
 
-## Priorité 1 - Structure globale
-- consolider définitivement le layout
-- harmoniser toutes les largeurs utiles
-- finaliser header et footer
-- garder zéro sidebar front par défaut
+- identité visuelle marketplace agricole renforcée
+- vendeurs mieux mis en avant dans le parcours d’achat
+- accueil Gutenberg enrichi et orienté conversion
+- blog intégré dans la page d’accueil
+- responsive amélioré sur tous les écrans
 
-## Priorité 2 - WooCommerce
-- affiner l’archive boutique
-- harmoniser cartes produits et catégories
-- améliorer tri, espacements et hiérarchie visuelle
-- préparer une intégration plus propre des fiches produit
+## Prochaine étape : 2.5.x
 
-## Priorité 3 - WCFM
-- intégrer les vendeurs proprement dans le front
-- styliser les blocs "magasin / vendeur"
-- préparer les pages vendeurs comme de vraies vitrines marketplace
+- affiner les templates WooCommerce spécialisés si nécessaire (sans surcharge inutile)
+- enrichir les pages vendeurs WCFM (vitrine + confiance)
+- améliorer les filtres et la navigation catalogue
+- optimiser les performances CSS sur mobiles bas débit
 
-## Priorité 4 - Accueil Gutenberg
-- finaliser le pattern d’accueil
-- ajouter les sections clés :
-  - catégories phares
-  - produits en promo
-  - nouveautés
-  - réassurance
-  - contenu éditorial
-- préparer l’intégration future de vidéos
+## Vision 2.6.0
 
-## Priorité 5 - Raffinement
-- consolider le responsive
-- améliorer le style iconographique
-- préparer les fichiers WooCommerce spécialisés uniquement si nécessaire
+- patterns Gutenberg additionnels orientés marketplace locale
+- variantes de sections d’accueil saisonnières
+- composants de réassurance avancés (icônes, labels qualité, provenance)
