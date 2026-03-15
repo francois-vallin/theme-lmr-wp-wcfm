@@ -3,7 +3,7 @@
  * Theme: Le Marché Rural
  * Version: 2.5.0
  * Author: François Vallin
- * Updated: 2026-03-13T10:30
+ * Updated: 2026-03-13T10:45
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -19,8 +19,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
 <header class="site-header" role="banner">
-    <div class="container row lmr-header-row">
+    <div class="container lmr-header-row">
         <div class="lmr-header-branding">
             <a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/icons/basket.svg' ); ?>" alt="<?php esc_attr_e( 'Logo Le Marché Rural', 'le-marche-rural' ); ?>">
@@ -35,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                     'theme_location' => 'primary',
                     'container'      => false,
                     'fallback_cb'    => false,
-                    'depth'          => 2,
+                    'depth'          => 1,
                     'items_wrap'     => '<ul class="menu">%3$s</ul>',
                 ]
             );
@@ -57,5 +58,6 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
     </div>
 </header>
+
 <main class="site-main">
     <div class="container lmr-container">
